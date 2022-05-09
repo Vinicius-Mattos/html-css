@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.number {
+            text-align: right;
+        }
+
+        thead, tfoot {
+            background-color: rgb(85, 85, 85);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(85, 85, 85);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION (LEGENDA)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>Popolação das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="number">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="number">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="number">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="number">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="number">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="number">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="number">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="number">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="number">7.018.354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="number">4.144.597</td>
+            </tr>
+            <tr>
+                <td>Espírito Santos</td>
+                <td class="number">4.018.650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="number">4.018.127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="number">3.506.853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="number">3.484.466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="number">3.337.357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="number">3.273.227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="number">3.015.268</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="number">2.778.986</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="number">2.298.696</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="number">1.177.225</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="number">1.572.866</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="number">881.935</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">845.731</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">605.761</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="number"><strong>84.352.783</strong></td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sunt ab dignissimos sit esse commodi aliquid, aperiam quam itaque error ullam laboriosam deleniti minus dolores ratione repellendus beatae ut! Illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officia quas incidunt, minus dicta nihil quidem consequatur laborum pariatur ipsam culpa minima delectus dolore totam dignissimos alias ab. Et, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora quod, aperiam facilis quos saepe culpa alias maxime, corporis cum quasi soluta sed! Voluptatem, omnis consequatur esse inventore quia mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloribus quas recusandae quasi amet vero libero quo, quod consectetur dolore, repellendus fuga? Provident, sint rerum. Eveniet autem assumenda quisquam? Similique!</p>
+
+</body>
+</html>
